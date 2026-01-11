@@ -95,9 +95,27 @@ const getBgClass = () => {
     <h2 className="text-2xl font-bold">
       {weather.location.name}
     </h2>
-    <p className="text-xl">
-      {weather.current.temp_c} °C
-    </p>
+     <div className="flex items-center justify-center gap-3">
+              <img
+                src={weather.current.condition.icon}
+                alt="weather icon"
+                className="w-16 h-16"
+              />
+              <span className="text-4xl font-semibold text-gray-700">
+                {weather.current.temp_c}°C
+              </span>
+            </div>
+            <p className="text-lg text-gray-600 capitalize">
+              {weather.current.condition.text}
+            </p>
+            <p className="text-sm text-gray-500">
+              Feels like {weather.current.feelslike_c}°C
+            </p>
+             <div className="flex justify-between text-gray-600 text-sm mt-4 px-4">
+              <span>💨 {weather.current.wind_kph} km/h</span>
+              <span>💧 {weather.current.humidity}%</span>
+            </div>
+            
   </div>
 )}
 
