@@ -17,4 +17,4 @@ It includes input validation, loading states, error handling, and dynamic backgr
 - Tailwind CSS
 - WeatherAPI
 # Live Demo
-https://weather-app-xxxxx.vercel.app
+https://weather-app-eight-taupe-33.vercel.app/
